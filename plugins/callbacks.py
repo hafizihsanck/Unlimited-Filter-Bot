@@ -47,12 +47,12 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Creater", url="https://t.me/ihsan_bin_ahmd"),
+                    InlineKeyboardButton("How to Deploy?", url="https://youtu.be/hkmc3e7U7R4"),
                     InlineKeyboardButton("About Me", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("Channel", url="https://t.me/Moveis_hund"),
-                    InlineKeyboardButton("Group", url="https://t.me/joinchat/ehFX99SheBI3ZGZl")
+                    InlineKeyboardButton("BOT Channel", url="https://t.me/TroJanzHEX"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/TroJanzSupport")
                 ]
             ]
         )
@@ -67,6 +67,11 @@ async def cb_handler(client, query):
     elif query.data == "about_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
+                ],
                 [
                     InlineKeyboardButton("BACK", callback_data="help_data"),
                     InlineKeyboardButton("CLOSE", callback_data="close_data"),
